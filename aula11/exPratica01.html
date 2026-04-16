@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro ou brasileiro</title>
+    <style>
+
+        h1 {
+        font: bold  32px  Arial;
+        color: white;
+    
+        }
+        h2 {
+            font: 400 20px Arial; 
+            color: whitesmoke;
+        }
+        header{
+            padding:25px ;
+            width: fit-content;
+            margin-bottom: 26px;
+            border-radius: 24px;
+        background: rgb(75, 38, 11);
+        }
+        div{
+        padding:25px ;
+            width: fit-content;
+            
+            border-radius: 24px;
+        background: rgb(41, 75, 11);
+        }
+        p{
+           font: 200 14px Arial; 
+            color: whitesmoke; 
+        }
+        
+        input{
+            border-radius: 8px;  
+                  
+        }
+    
+
+        
+    
+    </style>
+</head>
+<header> 
+<h1>Sistema de nacionalidade</h1>
+    <h2>Digite abaixo o seu país de origem:</h2>
+</header>
+
+<body>
+    <div>
+
+    <input type="text" id="nacionalidade">
+    <input type="button" value="Verificar" onclick="responder()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function responder () {
+            var país = document.querySelector('input#nacionalidade')
+            var res = document.querySelector('div#res')
+            if (país.value !='Brasil') {
+            res.innerHTML = `<p>Você é estrangeiro! </p> `
+        }         
+        else 
+         res.innerHTML = `<p>Você é brasileiro! </p>`
+}
+    
+        
+    </script>
+
+</body>
+</html>
+
+
