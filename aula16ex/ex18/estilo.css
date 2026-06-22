@@ -13,7 +13,13 @@ section{
     padding:16px;
     width: 500px;
     margin:auto;
-    box: shadow 3px;px 3px 10px rgba(0, 0, 0, 0.136)
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.136);
+}
+
+select#flista {
+    width: 150px;
+    padding: 5px;
+    margin-top: 10px;
 }
 
 footer{
